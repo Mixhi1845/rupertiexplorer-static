@@ -1,4 +1,25 @@
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const codeToPage = {
+  '1': '/galerie/mensa.html',
+  '2': '/galerie/edv.html',
+  '3': '/galerie/sportplatz.html'
+};
+
+const codeInput = document.getElementById('code-input');
+const searchButton = document.getElementById('search-button');
+
+searchButton.addEventListener('click', () => {
+  const enteredCode = codeInput.value;
+  
+  if (codeToPage.hasOwnProperty(enteredCode)) {
+    window.location.href = codeToPage[enteredCode];
+  } else {
+    alert('Code existiert nicht!');
+  }
+});
+
+
+  
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -17,3 +38,4 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+*/

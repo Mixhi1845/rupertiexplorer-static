@@ -38,24 +38,10 @@
                                 <span class="nav__name"><p>Galerie</p></span>
                             </a>
                         </li>
-
-                 <!--   <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class='bx bx-briefcase-alt nav__icon'></i>
-                                <span class="nav__name">Portfolio</span>
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#contactme" class="nav__link">
-                                <i class='bx bx-message-square-detail nav__icon'></i>
-                                <span class="nav__name">Contactme</span>
-                            </a>
-                        </li>-->
                     </ul>
                 </div>
 
-                <a class="nav__logo" href="index.html"><h1>Codeeingabe</h1></a>
+                <a class="nav__logo" href="index.html"><h1 class="nav__title">Codeeingabe</h1></a>
                 <div>
                     <a class="nav__logo imp__padding" href="impressum.html">Impressum</a>
                     <i class="fa-solid fa-gear nav__logo"></i>
@@ -64,13 +50,26 @@
         </header>
                 
         <!--=============== Content ===============-->
-        <section class="container firstsection" id="home">
-            <h1 class="section__title"><strong>Code bitte hier eingeben</strong></h1>
+        <section class="container firstsection">
+            <div class="codefield">
+                <input id="code-input" placeholder="Hier Code eingeben..." type="text">
+                <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>                                
+            </div>
         </section>
-        
+
+        <section class="container section">
+            <div class="article__txt">
+                1: mensa
+                2: edv
+                3: sportplatz
+            </div>
+        </section>
        
-        <!--=============== MAIN JS ===============
+        <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        
+        
+        <!--
 
          <section class="container section section__height" id="home">
         <h2>Infos zu unserer Schule:</h2>
