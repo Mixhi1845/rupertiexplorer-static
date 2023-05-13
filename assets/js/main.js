@@ -17,6 +17,12 @@ searchButton.addEventListener('click', () => {
   }
 });
 
+function copyText() {
+	
+  /* Copy text into clipboard */
+  navigator.clipboard.writeText
+    ("https://rupertiexplorer.github.io/galerie/mensa.html");
+}
 
   
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============

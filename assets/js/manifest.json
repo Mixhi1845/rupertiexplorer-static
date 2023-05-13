@@ -1,0 +1,9 @@
+{
+    "name": "rupertiexplorer",
+    "description": "informative website for the Ruperti-Gymnasium Mühldorf am Inn",
+    "short_name": "RuExplorer",
+    "start_url": "/index.html",
+    "lang": "de-DE",
+    "theme_color": "#AA2D88",
+    "display": "standalone"
+  }
