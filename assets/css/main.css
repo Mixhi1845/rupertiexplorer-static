@@ -190,7 +190,7 @@ img {
   align-items: center;
   row-gap: 4px;
   color: var(--text-color);
-  font-weight: 600;
+  font-weight: var(--opensans-semibold);
 }
 
 .nav__list {
@@ -227,71 +227,6 @@ img {
 /*.scroll-header {
   box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
 }*/
-
-/*=============== MEDIA QUERIES ===============*/
-/* For small devices */
-/* Remove if you choose, the minimalist design */
-@media screen and (max-width: 320px) {
-  .nav__name {
-    display: none;
-  }
-}
-
-/* For medium devices */
-@media screen and (min-width: 576px) {
-  .nav__list {
-    justify-content: center;
-    column-gap: 3rem;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  body {
-    margin: 0;
-  }
-  .section {
-    padding-top: 2rem;
-  }
-  .nav {
-    height: calc(var(--header-height) + 1.5rem); /* 4.5rem */
-  }
-  /*.nav__img {
-    display: none;
-  }*/
-  .nav__icon {
-    display: none;
-  }
-  .nav__name {
-    font-size: var(--normal-font-size);
-    /* display: block; */ /* Minimalist design, visible labels */
-  }
-  .nav__link:hover {
-    color: var(--first-color);
-  }
-
-  /* First design, remove if you choose the minimalist design */
-  .active-link::before {
-    content: '';
-    position: absolute;
-    bottom: -.75rem;
-    width: 4px;
-    height: 4px;
-    background-color: var(--first-color);
-  }
-
-  /* Minimalist design */
-  /* .active-link::before{
-      bottom: -.75rem;
-  } */
-}
-
-/* For large devices */
-@media screen and (min-width: 1024px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
 /*impressum padding for put it apart from icon*/
 .imp__padding {
@@ -426,6 +361,99 @@ input {
   border-bottom-right-radius: 10px;
   font-size: large;
 }
+
+/*=============== MEDIA QUERIES ===============*/
+/* For small devices */
+/* Remove if you choose, the minimalist design */
+@media screen and (max-width: 320px) {
+  .nav__name {
+    display: none;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .nav__list {
+    justify-content: center;
+    column-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gradient {
+    height: 80px;
+    width: 90%;
+  }
+  .heroselect {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px; 
+  }
+  .firstsection {
+    padding-top: 4rem;
+  }
+  .codefield {
+    margin-top: 50vmin;
+  }
+  input {
+    height: 100px;
+  }
+  input[type="text"] {
+    padding: 5px;
+    text-align: center;
+    font-family: var(--body-font);
+    font-size: 20pt;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  body {
+    margin: 0;
+  }
+  .section {
+    padding-top: 2rem;
+  }
+  .nav {
+    height: calc(var(--header-height) + 1.5rem); /* 4.5rem */
+  }
+  /*.nav__img {
+    display: none;
+  }*/
+  .nav__icon {
+    display: none;
+  }
+  .nav__name {
+    font-size: var(--normal-font-size);
+    /* display: block; */ /* Minimalist design, visible labels */
+  }
+  .nav__link:hover {
+    color: var(--first-color);
+  }
+
+  /* First design, remove if you choose the minimalist design */
+  .active-link::before {
+    content: '';
+    position: absolute;
+    bottom: -.75rem;
+    width: 4px;
+    height: 4px;
+    background-color: var(--first-color);
+  }
+
+  /* Minimalist design */
+  /* .active-link::before{
+      bottom: -.75rem;
+  } */
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 /*#search-button {
   padding: 5px 10px;
