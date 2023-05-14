@@ -4,6 +4,6 @@
     "short_name": "RuExplorer",
     "start_url": "/index.html",
     "lang": "de-DE",
-    "theme_color": "#AA2D88",
-    "display": "standalone"
+    "theme_color": "#000000",
+    "display": "fullscreen"
   }
