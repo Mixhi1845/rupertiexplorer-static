@@ -10,11 +10,10 @@
   --hue: 174;
   --sat: 63%;
   --first-color: hsl(316, 58%, 42%);
-  --first-color-alt: hsl(0, 0, 20%);
+  --second-color: hsl(0, 0%, 80%);
   --title-color: hsl(316, 58%, 42%);
-  --text-color: hsl(0, 100%, 100%);
-  --body-color: #000000;
-  --container-color: #000000;
+  --text-color: #000000;
+  --body-color: hsl(0, 100%, 100%);
 
   /*========== Font and typography ==========*/
   --body-font: 'Open Sans', sans-serif;
@@ -95,7 +94,7 @@ button {
   background-color: transparent;
   box-shadow: transparent;
   /*border: transparent;*/
-  color: white;
+  color: var(--text-color);
   border-radius: 10px;
 }
 
@@ -140,7 +139,7 @@ button {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--container-color);
+  background-color: var(--body-color);
   z-index: var(--z-fixed);
   transition: .4s;
   border-bottom: 2px solid var(--text-color);
@@ -177,7 +176,7 @@ button {
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: var(--container-color);
+    background-color: var(--body-color);
     /*box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);*/
     padding: 0 1rem;
     width: 100%;
@@ -254,7 +253,7 @@ button {
 .article-description {
   width: 66%;
   padding: 10px;
-  background-color: #333333;
+  background-color: var(--second-color);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   height: 100px;
@@ -300,13 +299,13 @@ button {
 }
 
 .gradient h1 {
-  color: var(--text-color);
+  color: #fff;
   font-family: var(--body-font);
 }
 
 /*vorlagen*/
 .textbox {
-  background-color: #333333; 
+  background-color: var(--second-color); 
   border-radius: 10px; 
   width: 90%;
   margin:auto;
@@ -320,7 +319,7 @@ button {
 }
 
 .article_a {
-  color: #fff;
+  color: var(--text-color);
 }
 
 .borderrad10{
@@ -331,11 +330,61 @@ button {
 
 .article__txt {
   padding: 10px;
-  background-color: #333333;
+  background-color: var(--second-color);
   border-radius: 10px;
   height: auto;
   width: 100%;
 }
+
+#gallery {
+  line-height:0;
+  -webkit-column-count:5; /* split it into 5 columns */
+  -webkit-column-gap:5px; /* give it a 5px gap between columns */
+  -moz-column-count:5;
+  -moz-column-gap:5px;
+  column-count:5;
+  column-gap:5px;
+}
+
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom:5px; /* to match column gap */
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  #gallery {
+   -moz-column-count:    4;
+   -webkit-column-count: 4;
+   column-count:         4;
+  }
+}
+
+@media (max-width: 1000px) {
+  #gallery {
+   -moz-column-count:    3;
+   -webkit-column-count: 3;
+   column-count:         3;
+  }
+}
+
+@media (max-width: 800px) {
+  #gallery {
+   -moz-column-count:    2;
+   -webkit-column-count: 2;
+   column-count:         2;
+  }
+}
+
+@media (max-width: 400px) {
+  #gallery {
+   -moz-column-count:    1;
+   -webkit-column-count: 1;
+   column-count:         1;
+  }
+}
+
 
 /* code.html*/
 
@@ -347,7 +396,7 @@ input[type="text"] {
 }
 
 .codefield {
-  background-color: #333;
+  background-color: var(--second-color);
   border-radius: 10px;
 }
 
@@ -417,6 +466,18 @@ input {
     font-family: var(--body-font);
     font-size: 20pt;
   }
+  h1 {
+    font-size: 20pt;
+  }
+  h2 {
+    font-size: 18pt;
+  }
+  h3 {
+    font-size: 16pt;
+  }
+  p {
+    font-size: 14pt;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -468,49 +529,14 @@ input {
 }
 
 
-/*#search-button {
-  padding: 5px 10px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  /*border-radius: 5px;
-  cursor: pointer;
-}*/
-
-
-
-/*
-
-
-a {
-    color: white;
-    text-decoration: none;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --hue: 174;
+    --sat: 63%;
+    --first-color: hsl(316, 58%, 42%);
+    --second-color: #333;
+    --title-color: hsl(316, 58%, 42%);
+    --text-color: hsl(0, 100%, 100%);
+    --body-color: #000000;
+  }
 }
-
-.navbar {
-    position:fixed;
-    background-color: rgb(55, 55, 55);
-    bottom:0px;
-    border-top: 4px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-
-.article h2 {
-  margin-bottom: 10px;
-}
-
-.article-content {
-  display: flex;
-  width: 100%;
-}
-
-.article-description p {
-  margin-bottom: 10px;
-}
-
-
-.block{
-    display: block;
-  }*/
