@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 	<head>
 		<title>Ruperti Explorer</title>
 		<meta charset="utf-8" />
         <script src="https://kit.fontawesome.com/dc1eb82b5e.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="assets/css/main.css"/>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="/assets/css/main.css"/>
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 
         <!--favicon-->
         <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
@@ -28,28 +28,31 @@
 	</head>
 
     <body>
-        <!--header: view name, impressum, settings popup menu-->
+        <!--header + impressum sticking to it-->
+        <!--site name + settings pop-up-->
         <header class="header" id="header">
-            <nav class="nav container">                
+            <nav class="nav container">
+                <!--<a class="nav__logo" href="index.html"><img class="svgcolor1" src ="assets/weblogo.svg" alt="logo"/></a>-->
+                
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="index.html" class="nav__link">
+                            <a href="/index.html" class="nav__link">
                                 <i class="fa-solid fa-house"></i>
                                 <span class="nav__name"><p>Start</p></span>
                             </a>
                         </li>
                         
                         <li class="nav__item">
-                            <a href="code.html" class="nav__link">
+                            <a href="/code.html" class="nav__link">
                                 <i class="fa-solid fa-key"></i>
                                 <span class="nav__name"><p>Code</p></span>
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="galerie.html" class="nav__link active-link">
+                            <a href="/galerie.html" class="nav__link">
                                 <i class="fa-solid fa-photo-video"></i>
                                 <span class="nav__name"><p>Galerie</p></span>
                             </a>
@@ -57,8 +60,7 @@
                     </ul>
                 </div>
 
-                <a class="nav__logo" href="index.html"><h1 class="nav__title">Galerie</h1></a>
-                <i class="fa-solid fa-filter nav__logo"></i>
+                <a href="/index.html"><img src ="/assets/weblogo.svg" alt="logo" class="nav__img svgcolor1"></a> 
                 <div class="dropdown">
                     <button class="dropbtn">Infos 
                       <i class="fa fa-caret-down"></i>
@@ -72,51 +74,3 @@
                 </div>
             </nav>
         </header>
-
-        <!--Info articles-->
-        <section class="container firstsection">
-            <a class="article_a" class="block" href="/galerie/mensa.html">
-                <div class="article">
-                    <div class="article-description">
-                        <h2>Mensa</h2>
-                        <p>Hier können sich Schülerinnen und Schüler jederzeit etwas zu Essen oder zu Trinken kaufen.</p>
-                    </div>
-                    <div class="article-image">
-                        <img class="article__pre" src="images/fulls/mensa.jpg" alt="Bild des Artikels 1">
-                    </div>
-                </div>
-            </a>
-
-            <a class="article_a" class="block" href="/galerie/edv.html">
-                <div class="article">
-                    <div class="article-description">
-                        <h2>EDV-Räume</h2>
-                        <p>Hier finden der Natur & Technik- und Informatikunterricht statt.</p>
-                    </div>
-                    <div class="article-image">
-                        <img class="article__pre" src="images/fulls/edv.jpg" alt="Bild des Artikels 1">
-                    </div>
-                </div>
-            </a>
-
-            <a class="article_a" class="block" href="/galerie/sportplatz.html">
-                <div class="article">
-                    <div class="article-description">
-                        <h2>Sportplatz</h2>
-                        <p>Hier findet vorallem im Sommer der Sportunterricht statt, man kann zudem bei gutem Wetter in der Freizeit Sport machen.</p>
-                    </div>
-                    <div class="article-image">
-                        <img class="article__pre" src="images/fulls/sportplatz.jpg" alt="Bild des Artikels 1">
-                    </div>
-                </div>
-            </a>
-        </section>
-            <!-- weitere Artikel hier -->
-        </div>
-          
-
-
-        <!--filter popup-->
-
-    </body>
-</html>

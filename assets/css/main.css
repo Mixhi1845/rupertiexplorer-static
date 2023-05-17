@@ -1,6 +1,74 @@
-/*=============== GOOGLE FONTS ===============*/
+/*=============== GOOGLE FONTS ===============
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;700&display=swap');*/
+
+/*=============== LOCAL FONTS ===============*/
+/* vollkorn-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts//vollkorn-v22-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts//vollkorn-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts//vollkorn-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts//vollkorn-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts//vollkorn-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts//vollkorn-v22-latin-regular.svg#Vollkorn') format('svg'); /* Legacy iOS */
+}
+/* vollkorn-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/fonts//vollkorn-v22-latin-500.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts//vollkorn-v22-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts//vollkorn-v22-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts//vollkorn-v22-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts//vollkorn-v22-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts//vollkorn-v22-latin-500.svg#Vollkorn') format('svg'); /* Legacy iOS */
+}
+/* vollkorn-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts//vollkorn-v22-latin-700.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts//vollkorn-v22-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts//vollkorn-v22-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts//vollkorn-v22-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts//vollkorn-v22-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts//vollkorn-v22-latin-700.svg#Vollkorn') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/open-sans-v35-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/open-sans-v35-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/open-sans-v35-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/open-sans-v35-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/open-sans-v35-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/open-sans-v35-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/assets/fonts/open-sans-v35-latin-600.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/open-sans-v35-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/open-sans-v35-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/open-sans-v35-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/open-sans-v35-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/open-sans-v35-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -147,6 +215,52 @@ button {
 
 .svgcolor1 {
   filter: invert(27%) sepia(52%) saturate(2407%) hue-rotate(288deg) brightness(86%) contrast(93%);
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: var(--first-color);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--body-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--text-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--first-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /*=============== NAV ===============*/

@@ -23,6 +23,8 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="msapplication-starturl" content="/index.html">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
 	</head>
 
     <body>
@@ -56,17 +58,25 @@
                 </div>
 
                 <a class="nav__logo" href="/index.html"><h1 class="nav__title">Mensa</h1></a>
-                <div class="nav__buttons">                    
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <button onclick="copyText()">
-                                <i class="fa-solid fa-share-from-square nav__logo"></i>
-                                <span class="nav__name"><p>teilen</p></span>
-                            </button>
-                        </li>
-                    </ul>
-                    <a class="nav__logo imp__padding" href="/impressum.html">Impressum</a>
-                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <button onclick="copyText()">
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <span class="nav__name"><p>teilen</p></span>
+                        </button>
+                    </li>
+                </ul>   
+                <div class="dropdown">
+                    <button class="dropbtn">Infos 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/dropdown/handbuch.html">Handbuch</a>
+                        <a href="/dropdown/readme.html">README</a>
+                        <a href="/dropdown/datenschutz.html">Datenschutz</a>
+                        <a href="/dropdown/impressum.html">Impressum</a>
+                    </div>
+                </div>      
             </nav>
         </header>
 
@@ -82,17 +92,22 @@
         <section class="container section">
             <div class="article">
                 <div class="article__txt">
-                    <h3><strong>Facts:</strong></h3>
+                    <!--<h3><strong><u>Facts:</u></strong></h3>
                     <p> PCs: 123 <br> Ausstattung:  123 <br>Zertifikat:  123 <br>Hintergrundgeschichte: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo
                     </p>
-                    <br>
-                    <h3><strong>Ort in zahlen:</strong></h3>
+                    <br>-->
+                    <h3><strong><u>Ort in zahlen:</u></strong></h3>
                     <p>Stühle:123 <br> Tische: 123 <br> Länge: 123</p>
                     <br>
-                    <h3><strong>Highlights:</strong></h3>
+                    <h3><strong><u>Highlights:</u></strong></h3>
                     <p>Duis autem vel eum iriure dolor in hendrerit </p>
                     <br>
-                    <h3>Ort in Bildern:</h3>
+                    <h3><strong><u>Beschreibung:</u></strong></h3>
+                    <p>     Hier können sich Schülerinnen und Schüler jederzeit etwas zu Essen oder zu Trinken kaufen. 
+                    <br><br>In der Mensa des Gymnasiums kann man sich jederzeit, egal ob in der Pause vormittags oder am Mittag, etwas Leckeres zum Essen oder Trinken zu besorgen. Hier haben die Schülerinnen und Schüler eine breite Auswahl an der Theke oder sie können sich am Automaten bedienen. An der Theke gibt es für alle Schülerinnen und Schüler die Möglichkeit, bargeldlos und schnell mit dem Mensachip zu zahlen. Die Mensa bietet eine große Möglichkeit an Sitzplätzen an vielen Tischen, an denen man sich gemeinsam mit seinen Freunden setzen kann und essen kann. Außerdem steht hier auch eine Mikrowelle zur Verfügung, um sein selbst mitgebrachtes Essen zu erwärmen. 
+                    </p>
+                    <br>
+                    <h3><u>Ort in Bildern:</u></h3>
                         <div id="gallery">
                             <img src="/images/fulls/daniel-j-schwarz-IBkFtczZ1u4-unsplash-min.webp">
                             <img src="/images/fulls/daniel-j-schwarz-meOCpxYZt_g-unsplash-min.webp">
@@ -101,9 +116,7 @@
                             <img src="/images/fulls/daniel-j-schwarz-IBkFtczZ1u4-unsplash-min.webp">
                        </div>
                     <br>
-                    <h3><strong>Beschreibung:</strong></h3>
-                    <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
-                        <br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet.</p>
+                    <h3><u>Geschichtliches:</u></h3>
                 </div>
             </div>
         </section>

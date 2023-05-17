@@ -23,6 +23,8 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="msapplication-starturl" content="/index.html">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
 	</head>
 
     <body>
@@ -56,10 +58,25 @@
                 </div>
 
                 <a class="nav__logo" href="/index.html"><h1 class="nav__title">EDV-Räume</h1></a>
-                <div>
-                    <a class="nav__logo imp__padding" href="/impressum.html">Impressum</a>
-                    <i class="fa-solid fa-share-from-square nav__logo"></i>
-                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <button onclick="copyText()">
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <span class="nav__name"><p>teilen</p></span>
+                        </button>
+                    </li>
+                </ul>   
+                <div class="dropdown">
+                    <button class="dropbtn">Infos 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/dropdown/handbuch.html">Handbuch</a>
+                        <a href="/dropdown/readme.html">README</a>
+                        <a href="/dropdown/datenschutz.html">Datenschutz</a>
+                        <a href="/dropdown/impressum.html">Impressum</a>
+                    </div>
+                </div>   
             </nav>
         </header>
 
@@ -75,17 +92,22 @@
         <section class="container section">
             <div class="article">
                 <div class="article__txt">
-                    <h3><strong>Facts:</strong></h3>
+                    <!--<h3><strong><u>Facts:</u></strong></h3>
                     <p> PCs: 123 <br> Ausstattung:  123 <br>Zertifikat:  123 <br>Hintergrundgeschichte: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo
                     </p>
-                    <br>
-                    <h3><strong>Ort in zahlen:</strong></h3>
+                    <br>-->
+                    <h3><strong><u>Ort in zahlen:</u></strong></h3>
                     <p>Stühle:123 <br> Tische: 123 <br> Länge: 123</p>
                     <br>
-                    <h3><strong>Highlights:</strong></h3>
+                    <h3><strong><u>Highlights:</u></strong></h3>
                     <p>Duis autem vel eum iriure dolor in hendrerit </p>
                     <br>
-                    <h3>Ort in Bildern:</h3>
+                    <h3><strong><u>Beschreibung:</u></strong></h3>
+                    <p>     Hier finden der Natur & Technik- und Informatikunterricht statt.  
+                    <br><br>Im ersten Stock des Erweiterungsbaus hat das Gymnasium zwei EDV-Räume. Beide Räume sind mit ausreichend Computern ausgestattet, sodass alle Schülerinnen und Schüler im Natur & Technik-, sowie Informatikunterricht selbständig an diesen zu arbeiten und die gelernten Lehrinhalte anzuwenden. Jeder Schüler erhält dazu seine eigenen Zugangsdaten, um an seinen Aufgaben immer wieder weiterarbeiten zu können. 
+                    </p>
+                    <br>
+                    <h3><u>Ort in Bildern:</u></h3>
                         <div id="gallery">
                             <img src="/images/fulls/daniel-j-schwarz-IBkFtczZ1u4-unsplash-min.webp">
                             <img src="/images/fulls/daniel-j-schwarz-meOCpxYZt_g-unsplash-min.webp">
@@ -94,9 +116,7 @@
                             <img src="/images/fulls/daniel-j-schwarz-IBkFtczZ1u4-unsplash-min.webp">
                        </div>
                     <br>
-                    <h3><strong>Beschreibung:</strong></h3>
-                    <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
-                        <br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet.</p>
+                    <h3><u>Geschichtliches:</u></h3>
                 </div>
             </div>
         </section>
