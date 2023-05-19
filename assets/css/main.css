@@ -78,7 +78,7 @@
   --hue: 174;
   --sat: 63%;
   --first-color: hsl(316, 58%, 42%);
-  --second-color: hsl(0, 0%, 80%);
+  --second-color: hsl(0, 2%, 90%);
   --title-color: hsl(316, 58%, 42%);
   --text-color: #000000;
   --body-color: hsl(0, 100%, 100%);
@@ -217,6 +217,7 @@ button {
   filter: invert(27%) sepia(52%) saturate(2407%) hue-rotate(288deg) brightness(86%) contrast(93%);
 }
 
+/*=============== DROPDOWN ===============*/
 .dropdown {
   float: left;
   overflow: hidden;
@@ -328,6 +329,62 @@ button {
   font-size: 1.5rem;
 }
 
+/* Cookies
+.cover-container {
+  max-width: 42em;
+}
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+      float: left;
+  }
+  .nav-masthead {
+      float: right;
+  }
+}
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}*/
+
 /*Active link*/
 .active-link {
   position: relative;
@@ -375,6 +432,18 @@ button {
 
 .article-description h2 {
   margin-bottom: 5px;
+}
+
+.article-description p {
+  overflow:hidden;
+  line-height: 1.25rem;
+  max-height: 8rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
 }
 
 .article-image {
@@ -580,7 +649,14 @@ input {
     font-family: var(--body-font);
     font-size: 20pt;
   }
-  h1 {
+  .container {
+    max-width: 968px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  /*h1 {
     font-size: 20pt;
   }
   h2 {
@@ -591,7 +667,7 @@ input {
   }
   p {
     font-size: 14pt;
-  }
+  }*/
 }
 
 @media screen and (min-width: 767px) {
