@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 10px;
+        max-width: 560px;
+        margin: 0 auto;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+          'Segoe UI Symbol';
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>CookieConsent v3 + IframeManager</h1>
+
+      <button data-cc="show-preferencesModal" type="button">
+        Show preferences modal
+      </button>
+
+      <br />
+      <br />
+
+      <div data-service="youtube" data-id="5b35haQV7tU" data-autoscale></div>
+
+      <br />
+    </div>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.umd.js"
+    ></script>
+    <script defer src="/assets/js/cookieconsent-init.js"></script>
+  </body>
+</html>
