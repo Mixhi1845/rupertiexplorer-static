@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 	<head>
 		<title>Ruperti Explorer</title>
-		<meta charset="utf-8" />
+        <meta charset="UTF-8" />
         <script src="https://kit.fontawesome.com/dc1eb82b5e.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="assets/css/main.css"/>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="/assets/css/main.css"/>
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 
         <!--favicon-->
         <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
@@ -26,10 +26,17 @@
 
         <meta name="apple-mobile-web-app-capable" content="yes">
 
-        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.0/dist/cookieconsent.css" />
-        <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.0/dist/cookieconsent.js" defer></script>-->
+        <!--CDN links-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.css"
+        />
 	</head>
-
+    
     <body>
         <!--FIRST-USE POPUP-->
         <!--header: view name, impressum, settings popup menu-->
@@ -99,7 +106,22 @@
                 </a>
             </div>
         </section>
-        
+        <!--<section class="container">
+        <div id="app">
+            <h1>CookieConsent v3 + IframeManager</h1>
+      
+            <button data-cc="show-preferencesModal" type="button">
+              Show preferences modal
+            </button>
+      
+            <br />
+            <br />
+      
+            <div data-service="youtube" data-id="5b35haQV7tU" data-autoscale></div>
+      
+            <br />
+          </div>
+        </section>-->
         
         <section class="container section" id="Infos">
             <h2 class="section__title2">Infos zu unserer Schule:</h2>
@@ -117,7 +139,15 @@
         <!--=============== JS ===============-->
         <script src="assets/js/main.js"></script>
 
-        <!--<script defer src="cookieconsent-init.js"></script>-->
-
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.umd.js"
+        ></script>
+        
+        <script defer src="/assets/js/cookieconsent-init.js"></script>
     </body>
 </html>

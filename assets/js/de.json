@@ -1,0 +1,60 @@
+{
+    "consentModal": {
+      "label": "Cookie Consent",
+      "title": "🍪 Wir verwenden Cookies!",
+      "description": "Hallo, diese Website verwendet essentielle Cookies, um ihren ordnungsgemäßen Betrieb zu gewährleisten, und Tracking-Cookies, um zu verstehen, wie Sie mit ihr interagieren. Letztere werden nur nach Zustimmung gesetzt werden.",
+      "acceptAllBtn": "Alle akzeptieren",
+      "closeIconLabel": "Reject all and close",
+      "acceptNecessaryBtn": "Alle ablehnen",
+      "showPreferencesBtn": "Zur Auswahl",
+      "footer": "<a href=\"#link\">Privacy Policy</a><a href=\"#link\">Terms and conditions</a>"
+    },
+    "preferencesModal": {
+      "title": "Cookie Einstellungen",
+      "acceptAllBtn": "Alle akzeptieren",
+      "acceptNecessaryBtn": "Alle ablehnen",
+      "savePreferencesBtn": "Einstellungen speichern",
+      "closeIconLabel": "Schließen",
+      "serviceCounterLabel": "Service|Services",
+      "sections": [
+        {
+          "title": "Verwendung von Cookies 📢",
+          "description": "Wir verwende Cookies, um die grundlegenden Funktionen der Website zu gewährleisten und um Ihr Online-Erlebnis zu verbessern. Sie können für jede Kategorie wählen, ob Sie sich ein- oder austragen möchten. Für weitere Einzelheiten zu Cookies und anderen sensiblen Daten lesen Sie bitte die vollständige <a href=\"dropdown\"datenschutz.html\" \"cc__link\">Datenschutzerklärung</a>."
+        },
+        {
+          "title": "Notwendige Cookies <span class=\"pm__badge\">Immer aktiviert</span>",
+          "description": "Diese Cookies sind für das ordnungsgemäße Funktionieren meiner Website unerlässlich. Ohne diese Cookies würde die Website nicht richtig funktionieren.",
+          "linkedCategory": "necessary"
+        },
+        {
+          "title": "Leistungs- und Analyse-Cookies",
+          "description": "Diese Cookies ermöglichen es der Website, sich an die von Ihnen in der Vergangenheit getroffenen Auswahlen zu erinnern.",
+          "linkedCategory": "analytics",
+          "cookieTable": {
+            "headers": {
+              "name": "Cookie",
+              "Service": "Service",
+              "description": "Description"
+            },
+            "body": [
+              {
+                "name": "im_youtube",
+                "description": "Damit weiß die Seite, dass der Benutzer den YouTube-Service akzeptiert hat.",
+                "Service": "Youtube Einbettung"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Cookies für Werbung und Zielgruppenansprache",
+          "description": "Diese Cookies sammeln Informationen darüber, wie Sie die Website nutzen, welche Seiten Sie besucht und welche Links Sie angeklickt haben. Alle Daten sind anonymisiert und können nicht verwendet werden, um Sie zu identifizieren.",
+          "linkedCategory": "ads"
+        },
+        {
+          "title": "Weitere Informationen",
+          "description": "Haben Sie Fragen? Dann nehmen Sie mit uns  <a class=\"cc__link\" href=\"#yourdomain.com\">Kontakt</a> auf."
+        }
+      ]
+    }
+  }
+  

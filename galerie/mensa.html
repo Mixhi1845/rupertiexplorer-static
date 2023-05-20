@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 	<head>
 		<title>Ruperti Explorer</title>
-		<meta charset="utf-8" />
+        <meta charset="UTF-8" />
         <script src="https://kit.fontawesome.com/dc1eb82b5e.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="/assets/css/main.css"/>
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
@@ -25,6 +25,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
 
         <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!--CDN links-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.css"
+        />
 	</head>
 
     <body>
@@ -81,24 +91,8 @@
         </header>
 
         <section class="container firstsection">
-            <div style="padding-bottom:56.25%; position:relative; display:block; width: 100%;">
-                <!--<iframe width="100%" height="100%"
-                src="https://www.youtube.com/embed/N_l8GBMFp-0?autoplay=1"
-                frameborder="0" allowfullscreen="" style="position:absolute; top:0; left: 0">
-                </iframe>-->
-                
-                <iframe width="100%" height="100%" 
-                src="https://www.youtube-nocookie.com/embed/N_l8GBMFp-0" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
-                style="position:absolute; top:0; left: 0"
-                ></iframe>
-            
-                <!--<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/N_l8GBMFp-0?controls=0" 
-                title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
-                style="position:absolute; top:0; left: 0"
-                ></iframe>-->
-                
+            <div style="position:relative; display:block; width: 100%">
+                <div data-service="youtube" data-id="N_l8GBMFp-0" data-autoscale></div>
             </div>
         </section>
 
@@ -134,8 +128,20 @@
                 </div>
             </div>
         </section>
+        
+        <!--=============== JS ===============-->
+        <script src="/assets/js/main.js"></script>
 
-
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.umd.js"
+        ></script>
+        
+        <script defer src="/assets/js/cookieconsent-init.js"></script>
 
     </body>
 </html>

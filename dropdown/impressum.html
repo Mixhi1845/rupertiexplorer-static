@@ -2,7 +2,7 @@
 <html lang="de">
 	<head>
 		<title>Ruperti Explorer</title>
-		<meta charset="utf-8" />
+        <meta charset="UTF-8" />
         <script src="https://kit.fontawesome.com/dc1eb82b5e.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="/assets/css/main.css"/>
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
@@ -25,6 +25,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
 
         <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!--CDN links-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.css"
+        />
 	</head>
 
     <body>
@@ -121,10 +131,21 @@
             <p>Die auf unserer Webseite veröffentlichen Inhalte und Werke unterliegen dem deutschen Urheberrecht (http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf) . Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung des geistigen Eigentums in ideeller und materieller Sicht des Urhebers außerhalb der Grenzen des Urheberrechtes bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Urhebers i.S.d. Urhebergesetzes (http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf ). Downloads und Kopien dieser Seite sind nur für den privaten und nicht kommerziellen Gebrauch erlaubt. Sind die Inhalte auf unserer Webseite nicht von uns erstellt wurden, sind die Urheberrechte Dritter zu beachten. Die Inhalte Dritter werden als solche kenntlich gemacht. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte unverzüglich entfernen.</p>
             <br>
             <p>Dieses Impressum wurde freundlicherweise von jurarat.de zur Verfügung gestellt.</p>
-        </section>    
+        </section>
+        
+        <!--=============== JS ===============-->
+        <script src="assets/js/main.js"></script>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="/assets/js/main.js"></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.umd.js"
+        ></script>
+        
+        <script defer src="/assets/js/cookieconsent-init.js"></script>
 
 
     </body>
