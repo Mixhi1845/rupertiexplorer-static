@@ -99,6 +99,50 @@
   --z-fixed: 100;
 }
 
+/*cookie*/
+.cookie_theme{
+  --cc-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  --cc-link-color: var(--cc-btn-primary-bg);
+  --cc-bg: var(--second-color);
+  --cc-primary-color: var(--first-color);
+  --cc-secondary-color: var(--text-color);
+  --cc-btn-primary-bg: var(--first-color);
+  --cc-btn-primary-color: #fff;
+  --cc-btn-primary-border-color: var(--cc-btn-primary-bg);
+  --cc-btn-primary-hover-bg: var(--body-color);
+  --cc-btn-primary-hover-color: var(--text-color);
+  --cc-btn-primary-hover-border-color: var(--cc-btn-primary-hover-bg);
+  --cc-btn-secondary-bg: var(--second-color);
+  --cc-btn-secondary-color: var(--cc-primary-color);
+  --cc-btn-secondary-border-color: var(--cc-btn-secondary-bg);
+  --cc-btn-secondary-hover-bg: var(--second-color);
+  --cc-btn-secondary-hover-color: var(--text-color);
+  --cc-btn-secondary-hover-border-color: var(--text-color);
+  --cc-separator-border-color: #f0f4f7;
+  --cc-toggle-on-bg: var(--cc-btn-primary-bg);
+  --cc-toggle-off-bg: #667481;
+  --cc-toggle-on-knob-bg: #fff;
+  --cc-toggle-off-knob-bg: var(--cc-toggle-on-knob-bg);
+  --cc-toggle-enabled-icon-color: var(--cc-bg);
+  --cc-toggle-disabled-icon-color: var(--cc-bg);
+  --cc-toggle-readonly-bg: #d5dee2;
+  --cc-toggle-readonly-knob-bg: #fff;
+  --cc-toggle-readonly-knob-icon-color: var(--cc-toggle-readonly-bg);
+  --cc-section-category-border: var(--cc-cookie-category-block-bg);
+  --cc-cookie-category-block-bg: var(--second-color);
+  --cc-cookie-category-block-border: #f0f4f7;
+  --cc-cookie-category-block-hover-bg: var(--body-color);
+  --cc-cookie-category-block-hover-border: #e9eff4;
+  --cc-cookie-category-expanded-block-bg: transparent;
+  --cc-cookie-category-expanded-block-hover-bg: #dee4e9;
+  --cc-overlay-bg: rgba(0,0,0,.541);
+  --cc-webkit-scrollbar-bg: var(--cc-section-category-border);
+  --cc-webkit-scrollbar-hover-bg: var(--cc-btn-primary-hover-bg);
+  --cc-footer-bg: var(--cc-btn-secondary-bg);
+  --cc-footer-color: var(--cc-secondary-color);
+  --cc-footer-border-color: #e4eaed;
+}
+
 @media screen and (min-width: 968px) {
   :root {
     --h1-font-size: 2.25rem;
@@ -179,13 +223,11 @@ button {
   font-size: var(--h1-font-size);
   color: var(--text-color);
   text-align: left;
-  margin-left: 5%;
 }
 
 .section__title2 {
   color: var(--text-color);
   text-align: left;
-  margin-left: 5%;
 }
 
 .section__height {
@@ -329,58 +371,6 @@ button {
   font-size: 1.5rem;
 }
 
-/*cookies
-.theme_blue {
-  --cc-bg: var(--body-color);
-  --cc-text: var(--text-color);
-  --cc-btn-primary-bg: var(--first-color);
-  --cc-btn-primary-text: var(--text-color);
-  --cc-btn-primary-hover-bg: var(--text-color);
-  --cc-btn-secondary-bg: var(--second-color);
-  --cc-btn-secondary-text: var(--text-color);
-  --cc-btn-secondary-hover-bg: var(--text-color);
-  --cc-toggle-bg-off: var(--second-color);
-  --cc-toggle-bg-on: var(--first-color);
-  --cc-toggle-bg-readonly: var(--text-color);
-  --cc-toggle-knob-bg: var(--second-color);
-  --cc-toggle-knob-icon-color: var(--text-color);
-  --cc-block-text: var(--cc-text);
-  --cc-cookie-category-block-bg: (--body-color);
-  --cc-cookie-category-block-bg-hover: (--body-color);
-  --cc-section-border: var(--body-color);
-  --cc-cookie-table-border: (--body-color);
-  --cc-overlay-bg: rgba(15, 16, 21, .9);
-  --cc-webkit-scrollbar-bg: var(--second-color);
-  --cc-webkit-scrollbar-bg-hover: var(--first-color);
-}
-
-.theme_blue #c-ttl,
-.theme_blue #s-bl td:before,
-.theme_blue #s-ttl,
-.theme_blue .cc_div .b-tl,
-.theme_blue .cc_div .c-bn,
-.theme_blue .cc_div a{
-  color: var(--text-color);
-}
-
-.theme_blue #s-bl .c-bl{
-  border-color: #111317;
-}
-
-.theme_blue .cc_div .b-tg,
-.theme_blue .cc_div .b-tg .c-tg,
-.theme_blue .cc_div .c-tgl,
-.theme_blue .cc_div span.t-lb,
-.theme_blue .cc_div .c-bn,
-.theme_blue #cm,
-.theme_blue #s-bl .act .b-acc,
-.theme_blue #s-inr,
-.theme_blue .cc_div .b-tl,
-.theme_blue .cc_div .c-bl,
-.theme_blue .cc_div .b-tg .c-tg:after{
-  border-radius: 0;
-}*/
-
 /*Active link*/
 .active-link {
   position: relative;
@@ -474,7 +464,7 @@ button {
   padding:10px;
   height: 220px;
   /*width: 165px;*/
-  width: 30%;
+  width: 33%;
 }
 
 .gradient h1 {
@@ -486,7 +476,7 @@ button {
 .textbox {
   background-color: var(--second-color); 
   border-radius: 10px; 
-  width: 90%;
+  width: 100%;
   margin:auto;
 }
 
@@ -618,7 +608,7 @@ input {
 @media screen and (max-width: 767px) {
   .gradient {
     height: 80px;
-    width: 90%;
+    width: 100%;
     margin-bottom: 10px;
   }
   .heroselect {
@@ -651,6 +641,12 @@ input {
     margin-right: 1rem;
     margin-top: 1.25rem;
     margin-bottom: 1rem;
+  }
+  .textbox_txt {
+    margin-bottom: 5rem;
+  }
+  .article__txt {
+    margin-bottom: 5rem;
   }
   /*h1 {
     font-size: 20pt;
@@ -724,5 +720,47 @@ input {
     --title-color: hsl(316, 58%, 42%);
     --text-color: hsl(0, 100%, 100%);
     --body-color: #000000;
+  }
+  .cookie_theme {
+    --cc-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --cc-link-color: var(--cc-btn-primary-bg);
+    --cc-bg: var(--second-color);
+    --cc-primary-color: var(--first-color);
+    --cc-secondary-color: var(--text-color);
+    --cc-btn-primary-bg: var(--first-color);
+    --cc-btn-primary-color: #fff;
+    --cc-btn-primary-border-color: var(--cc-btn-primary-bg);
+    --cc-btn-primary-hover-bg: var(--body-color);
+    --cc-btn-primary-hover-color: var(--text-color);
+    --cc-btn-primary-hover-border-color: var(--cc-btn-primary-hover-bg);
+    --cc-btn-secondary-bg: var(--second-color);
+    --cc-btn-secondary-color: var(--cc-primary-color);
+    --cc-btn-secondary-border-color: var(--cc-btn-secondary-bg);
+    --cc-btn-secondary-hover-bg: var(--second-color);
+    --cc-btn-secondary-hover-color: var(--text-color);
+    --cc-btn-secondary-hover-border-color: var(--text-color);
+    --cc-separator-border-color: #f0f4f7;
+    --cc-toggle-on-bg: var(--cc-btn-primary-bg);
+    --cc-toggle-off-bg: #667481;
+    --cc-toggle-on-knob-bg: #fff;
+    --cc-toggle-off-knob-bg: var(--cc-toggle-on-knob-bg);
+    --cc-toggle-enabled-icon-color: var(--cc-bg);
+    --cc-toggle-disabled-icon-color: var(--cc-bg);
+    --cc-toggle-readonly-bg: #d5dee2;
+    --cc-toggle-readonly-knob-bg: #fff;
+    --cc-toggle-readonly-knob-icon-color: var(--cc-toggle-readonly-bg);
+    --cc-section-category-border: var(--cc-cookie-category-block-bg);
+    --cc-cookie-category-block-bg: var(--second-color);
+    --cc-cookie-category-block-border: #f0f4f7;
+    --cc-cookie-category-block-hover-bg: var(--body-color);
+    --cc-cookie-category-block-hover-border: #e9eff4;
+    --cc-cookie-category-expanded-block-bg: transparent;
+    --cc-cookie-category-expanded-block-hover-bg: #dee4e9;
+    --cc-overlay-bg: rgba(0,0,0,.541);
+    --cc-webkit-scrollbar-bg: var(--cc-section-category-border);
+    --cc-webkit-scrollbar-hover-bg: var(--cc-btn-primary-hover-bg);
+    --cc-footer-bg: var(--cc-btn-secondary-bg);
+    --cc-footer-color: var(--cc-secondary-color);
+    --cc-footer-border-color: #e4eaed;
   }
 }
