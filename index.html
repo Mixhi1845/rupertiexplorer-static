@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="de">
 	<head>
+        <!--=============== HEAD ===============-->
 		<title>Ruperti Explorer</title>
         <meta charset="UTF-8" />
         <script src="https://kit.fontawesome.com/dc1eb82b5e.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="/assets/css/main.css"/>
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 
-        <!--favicon-->
+        <!--=============== FAVICON ===============-->
         <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
         <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
-        <!--app manifest-->
+        <!--=============== APP MANIFEST ===============-->
         <link rel="manifest" href="manifest.json">
 
         <meta name="mobile-web-app-capable" content="yes">
@@ -26,7 +27,7 @@
 
         <meta name="apple-mobile-web-app-capable" content="yes">
 
-        <!--CDN links-->
+        <!--=============== CDN links ===============-->
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.css"
@@ -38,8 +39,8 @@
 	</head>
     
     <body class="cookie_theme">
-        <!--FIRST-USE POPUP-->
-        <!--header: view name, impressum, settings popup menu-->
+
+        <!--=============== header mit dropdown menü ===============-->
         <header class="header" id="header">
             <nav class="nav container">                
 
@@ -83,61 +84,51 @@
             </nav>
         </header>
 
-        <!--=============== Content ===============-->
+        <!--=============== Heroselection ===============-->
         <section class="container firstsection" id="Willkommen">
             <h1 class="section__title"><strong>Willkommen,</strong></h1>
             <h1 class="section__title">wollen Sie zur...</h1>
-
-            <div class="heroselect">
-                <a href="https://www.ruperti-gymnasium.de/">
-                    <div class="gradient borderrad10">
-                        <h1>Homepage</h1>
-                    </div>
-                </a>
-                <a href="code.html">
-                    <div class="gradient borderrad10">
-                        <h1>Codeeingabe</h1>
-                    </div>
-                </a>
-                <a href="galerie.html">
-                    <div class="gradient borderrad10">
-                        <h1>Galerie</h1>
-                    </div>
-                </a>
+                
+            <a href="https://www.ruperti-gymnasium.de/">
+                <div class="gradient borderradius">
+                    <h1>Homepage</h1>
+                </div>
+            </a>
+            <a href="code.html">
+                <div class="gradient borderradius">
+                    <h1>Codeeingabe</h1>
+                </div>
+            </a>
+            <a href="galerie.html">
+                <div class="gradient borderradius">
+                    <h1>Galerie</h1>
+                </div>
+            </a>
+        </section>
+       
+        <!--=============== temporärer Infotext ===============-->
+        <section class="container section">
+            <div class="textdiv">
+                <h3><u>Info:</u></h3>
+                <p>Das Projekt befindet sich über die Pfingtferien in einer Entwicklungspause. Für weitere Infos kontaktieren sie uns bitte über Teams.</p>
             </div>
         </section>
-        <!--<section class="container">
-        <div id="app">
-            <h1>CookieConsent v3 + IframeManager</h1>
-      
-            <button data-cc="show-preferencesModal" type="button">
-              Show preferences modal
-            </button>
-      
-            <br />
-            <br />
-      
-            <div data-service="youtube" data-id="5b35haQV7tU" data-autoscale></div>
-      
-            <br />
-          </div>
-        </section>-->
         
+        <!--=============== Bild + Infotext ===============-->
         <section class="container section" id="Infos">
             <h2 class="section__title2">Infos zu unserer Schule:</h2>
             <div class="textbox">
                 <div class="textbox_img">
-                    <img class="borderrad10" src="images/fulls/index.png" alt="Bild des Artikels 2">
+                    <img class="borderradius" src="images/fulls/index.png" alt="Bild des Artikels 2">
                 </div>
-                <div class="textbox_txt">
+                <div class="textdiv">
                     <h3><strong>Ruperti Gymnasium Mühldorf am Inn</strong></h3>
-<!--                    <p>Das Ruperti - Gymnasium Mühldorf orientiert sich in seinem Selbstverständnis als höhere Schule an folgenden Zielen, die das Leben und die Atmosphäre an unserer Schule prägen: An erster Stelle steht das pädagogische Bemühen, Schülerinnen und Schüler in der Ausformung ihrer Gesamtpersönlichkeit zu fördern. Dazu gehören neben der individuellen Unterstützung und der Möglichkeit zur freien Entwicklung auch die Stärkung von Toleranz und demokratischem Verantwortungsbewusstsein.</p>-->
                     <p>Das Ruperti-Gymnasium ist ein Ort des freien Schaffens und des Strebens nach Wissen. Mit vielen Partnern und vielen Fördernden Veranstaltung steht die Zukunft ihres Schülers an erster Stelle. Wir fördern die Entfaltungsmöglichkeit ihres Kindes, damit es sich entwickeln kann und soziale und moralische Werte erlernt. Individuelle Förderung und moderne Bildung ist unser höchstes Gut.</p>
                 </div>
             </div>
         </section>
 
-        <!--=============== JS ===============-->
+        <!--=============== JavaScript + CDN scripts ===============-->
         <script src="assets/js/main.js"></script>
 
         <script

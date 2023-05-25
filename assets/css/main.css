@@ -1,7 +1,3 @@
-/*=============== GOOGLE FONTS ===============
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;700&display=swap');*/
-
 /*=============== LOCAL FONTS ===============*/
 /* vollkorn-regular - latin */
 @font-face {
@@ -230,10 +226,6 @@ button {
   text-align: left;
 }
 
-.section__height {
-  height: 80vh;
-}
-
 /*=============== LAYOUT ===============*/
 .container {
   max-width: 968px;
@@ -364,7 +356,6 @@ button {
 
 .nav__name {
   font-size: var(--tiny-font-size);
-  /* display: none;*/ /* Minimalist design, hidden labels */
 }
 
 .nav__icon {
@@ -376,26 +367,6 @@ button {
   position: relative;
   color: var(--first-color);
   transition: .3s;
-}
-
-/* Minimalist design, active link */
-/* .active-link::before{
-  content: '';
-  position: absolute;
-  bottom: -.5rem;
-  width: 4px;
-  height: 4px;
-  background-color: var(--first-color);
-} */
-
-/* Change background header */
-/*.scroll-header {
-  box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
-}*/
-
-/*impressum padding for put it apart from icon*/
-.imp__padding {
-  margin-right: auto;
 }
 
 /*article styling*/
@@ -446,19 +417,13 @@ button {
   overflow: hidden;
 }
 
-.heroselect {
-  width: 100%;
-  text-align: center;
-  vertical-align: middle;
-}
-
+/* index html */
 .gradient {
   display: inline-block;
   background: var(--first-color);
   background: linear-gradient(145deg, rgba(170,45,136,1) 0%, rgba(51,51,51,1) 100%);
   padding:10px;
   height: 220px;
-  /*width: 165px;*/
   width: 33%;
 }
 
@@ -470,16 +435,12 @@ button {
   line-height: 200px;
 }
 
-/*vorlagen*/
 .textbox {
   background-color: var(--second-color); 
   border-radius: 10px; 
   width: 100%;
   margin:auto;
 }
-
-/*.textbox_img {
-}*/
 
 .textbox_txt {
   padding: 20px;
@@ -489,20 +450,7 @@ button {
   color: var(--text-color);
 }
 
-.borderrad10{
-  border-radius: 10px;
-}
-
 /* galerie article*/
-
-.article__txt {
-  padding: 10px;
-  background-color: var(--second-color);
-  border-radius: 10px;
-  height: auto;
-  width: 100%;
-}
-
 .bignumbers {
   background: var(--second-color);
   width: 33%;  
@@ -516,6 +464,18 @@ button {
 .bignumbers h3 {
   color: #fff;
   font-family: var(--body-font);
+}
+
+.textdiv {
+  padding: 10px;
+  background-color: var(--second-color);
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.borderradius {
+  border-radius: 10px;
 }
 
 #gallery {
