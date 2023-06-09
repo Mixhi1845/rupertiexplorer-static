@@ -71,12 +71,10 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --hue: 174;
-  --sat: 63%;
   --first-color: hsl(316, 58%, 42%);
-  --second-color: hsl(0, 2%, 90%);
+  --second-color: hsl(0, 0%, 90%);
   --title-color: hsl(316, 58%, 42%);
-  --text-color: #000000;
+  --text-color: hsl(0, 0%, 0%);
   --body-color: hsl(0, 100%, 100%);
 
   /*========== Font and typography ==========*/
@@ -421,14 +419,14 @@ button {
 .gradient {
   display: inline-block;
   background: var(--first-color);
-  background: linear-gradient(145deg, rgba(170,45,136,1) 0%, rgba(51,51,51,1) 100%);
+  background: linear-gradient(145deg, var(--first-color) 0%, var(--second-color) 100%);
   padding:10px;
   height: 220px;
   width: 33%;
 }
 
 .gradient h1 {
-  color: #fff;
+  color: var(--text-color);
   font-family: var(--body-font);
   text-align: center;
   vertical-align: middle;
@@ -462,7 +460,7 @@ button {
 }
 
 .bignumbers h3 {
-  color: #fff;
+  color: var(--text-color);
   font-family: var(--body-font);
 }
 
@@ -692,13 +690,11 @@ input {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --hue: 174;
-    --sat: 63%;
     --first-color: hsl(316, 58%, 42%);
-    --second-color: #333;
+    --second-color: hsl(0, 0%, 20%);
     --title-color: hsl(316, 58%, 42%);
     --text-color: hsl(0, 100%, 100%);
-    --body-color: #000000;
+    --body-color: hsl(0, 0%, 0%);
   }
   .cookie_theme {
     --cc-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";

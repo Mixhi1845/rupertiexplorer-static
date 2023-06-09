@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+        <!--=============== HEAD ===============-->
+		<title>Ruperti Explorer</title>
+        <meta charset="UTF-8" />
+        <script src="https://kit.fontawesome.com/dc1eb82b5e.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/assets/css/main.css"/>
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+
+        <!--=============== FAVICON ===============-->
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
+        <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+        <!--=============== APP MANIFEST ===============-->
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="RuExplorer">
+        <meta name="apple-mobile-web-app-title" content="RuExplorer">
+        <meta name="theme-color" content="#AA2D88">
+        <meta name="msapplication-navbutton-color" content="#AA2D88">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-starturl" content="/index.html">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!--=============== CDN links ===============-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.css"
+        />
+	</head>
+    
+    <body class="cookie_theme">
+
+        <!--=============== header mit dropdown menü ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">                
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/index.html" class="nav__link">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="nav__name"><p>Start</p></span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="/code.html" class="nav__link">
+                                <i class="fa-solid fa-key"></i>
+                                <span class="nav__name"><p>Code</p></span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/galerie.html" class="nav__link active-link">
+                                <i class="fa-solid fa-photo-video"></i>
+                                <span class="nav__name"><p>Galerie</p></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="nav__logo" href="/index.html"><h1 class="nav__title">Mensa</h1></a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <button onclick="copyText()">
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <span class="nav__name"><p>teilen</p></span>
+                        </button>
+                    </li>
+                </ul>   
+                <div class="dropdown">
+                    <button class="dropbtn">Infos 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/dropdown/handbuch.html">Handbuch</a>
+                        <a href="/dropdown/readme.html">README</a>
+                        <a href="/dropdown/datenschutz.html">Datenschutz</a>
+                        <a href="/dropdown/impressum.html">Impressum</a>
+                    </div>
+                </div>      
+            </nav>
+        </header>
+
+        <section class="container firstsection">
+            <div class="container_numbers space-around">
+                <div class="bignumbers borderradius">
+                    <h3>1921</h3>
+                    <br><p>Eröffnet</p>
+                </div>
+                <div class="bignumbers borderradius">
+                    <h3>102</h3>
+                    <br><p>Jahre alt</p>
+                </div>
+                <div class="bignumbers borderradius">
+                    <h3>Medien</h3>
+                    <br><p>Schule</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="article">
+                <div class="textdiv">
+                    <h3><strong><u>Highlights:</u></strong></h3>
+                    <p>-</p>
+                    <br>
+                    <h3><strong><u>Beschreibung:</u></strong></h3>
+                    <p> <br>    Das Ruperti-Gymnasium hat 1921 begonnen als "Städtische Realschule mit Lateinabteilung", am Ende des vierten Schuljahres hatte die Schule ein eigenes Gebäude, am Ende des fünften ein eigenes Internat. Mit dem sechsten Schuljahr war der Ausbau der Mühldorfer Realschule abgeschlossen.
+                        <br>    Der 20. Jahresbericht enthält die Ministerialentschliessung für den Ausbau zur Vollanstalt, d.h. zur achtklassigen "Oberschule". Als sie 30 Jahre alt war, überlebte die "Oberschule" die drohende Schliessung dank der Hilfe der Eltern, der Gemeinden und der Industrie. In ihrem 37. Jahr, 1958, wurde sie schliesslich verstaatlicht.
+                        <br>    Im 40. Jahr verliess die Oberrealschule das alte Haus am Kirchplatz und bezog ein neues Gebäude in der Herzog-Friedrich-Strasse, den jetzigen Hauptbau; sie nannte sich von da an - in Erinnerung an die jahrhundertelange Zugehörigkeit Mühldorfs zum Fürstbistum Salzburg - nach dessen Gründer und Schutzpatron.
+                        <br>    Im Schuljahr 1970/71 bezog das (inzwischen wieder umbenannte) Ruperti-Gymnasium einen neuen Erweiterungsbau und eröffnete zugleich seine Zweigschule in Waldkraiburg.
+                        <br>    Zu Beginn des Schuljahres 1998/99 wird die Zweigschule Waldkraiburg selbständig und zu einem Vollgymnasium ausgebaut.
+                        <br>    In seinem 65. Schuljahr wurde das Gymnasium um einen Trakt zur Herzog-Friedrich-Strasse hin erweitert, und 1994 schliesslich wurde die Aussenstelle Herzog-Friedrich-Strasse 10 bezogen. Und den 75. Geburtstag begeht man mit einer ganzen Reihe von Veranstaltungen zwischen November '95 und Juli '96: mit musikalischen Aufführungen, literarhistorischen und zeitgeschichtlichen Vorträgen , mit Theateraufführungen, Ausstellungen und Exkursionen; mit einem Tag der offenen Tür, der seinerseits mit zahlreichen Attraktionen aufwartet, und schliesslich mit einem abschliessenden Jubiläumsfestakt.
+                        <br>    Manchem, dessen eigene Jugend mit der des Gymnasiums zusammenfiel, würde das Wiedererkennen der Jubilarin schwerfallen. Sie hat nicht nur - wie manche ältere Damen - den Namen mehrfach gewechselt, sondern sich auch im Aussehen und im Wesen verändert. Doch bei näherer Betrachtung würde er wohl sehen, daß dieser Schule Beharrlichkeit im Wesentlichen eignet: weil sie ihre Aufgabe nicht nur in der Wissensvermittlung in der Schulstube sah, sondern immer ebenso darin, "ihren" Schülern auch in anderer Beziehung möglichst viel mitzugeben.
+                        <br>    Und so kennzeichnen Wandel und Tradition die 75jährige Geschichte des Ruperti-Gymnasiums gleichermassen. Beide sind sie Widerspruch nur des ersten Augenscheins: Wandel gefährdet zwar Tradition, Wandel ist aber zugleich die einzige Chance, Tradition lebendig zu erhalten.
+                        <br>    (75 Jahre Ruperti-Gymnasium Mühldorf: Eine Chronik von Wolfgang Pfeiffer, StD i.R.)
+                    </p>
+                    <br>
+                    <h3><u>Ort in Bildern:</u></h3>
+                        <div id="gallery">
+                            <img loading="lazy" src="/images/fulls/histBilder/main202.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main205.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main206.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main207.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main208.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main209.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main210.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main211.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main212.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main213.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main215.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main216.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main217.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main218.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main219.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main220.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main221.jpg">
+                            <img loading="lazy" src="/images/fulls/histBilder/main222.jpg">
+                       </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--=============== JavaScript + CDN scripts ===============-->
+        <script src="/assets/js/main.js"></script>
+
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.umd.js"
+        ></script>
+        
+        <script defer src="/assets/js/cookieconsent-init.js"></script>
+
+    </body>
+</html>
