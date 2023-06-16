@@ -166,7 +166,6 @@ body {
 h1,h2 {
   font-family: var(--heading-font);
   font-weight: var(--vollkorn-medium);
-  line-height: 1em;
 }
 
 p,h3,h4,h5 {
@@ -199,6 +198,8 @@ img {
 button {
   background-color: transparent;
   box-shadow: transparent;
+  border: none;
+  outline: none;
   /*border: transparent;*/
   color: var(--text-color);
   border-radius: 10px;
@@ -217,11 +218,13 @@ button {
   font-size: var(--h1-font-size);
   color: var(--text-color);
   text-align: left;
+  line-height: 1em;
 }
 
 .section__title2 {
   color: var(--text-color);
   text-align: left;
+  line-height: 1em;
 }
 
 /*=============== LAYOUT ===============*/
@@ -370,11 +373,18 @@ button {
 /*article styling*/
 
 .article {
-  margin-bottom: 14px;
+  margin-bottom: 7px;
   display: flex;
   width: 100%;
 }
 
+.article__child {
+  margin-bottom: 7px;
+  display: flex;
+  width: 95%;
+  margin-left:auto;
+  margin-right:auto;
+}
 
 .article-description {
   width: 66%;
@@ -422,7 +432,7 @@ button {
   background: linear-gradient(145deg, var(--first-color) 0%, var(--second-color) 100%);
   padding:10px;
   height: 220px;
-  width: 33%;
+  width: 24.6%;
 }
 
 .gradient h1 {
@@ -446,6 +456,10 @@ button {
 
 .article_a {
   color: var(--text-color);
+}
+
+.bottomsection {
+  padding-bottom: 0rem;
 }
 
 /* galerie article*/
@@ -525,6 +539,47 @@ button {
   }
 }
 
+.collapsible {
+  background-color: var(--second-color);
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  line-height: normal;
+  font-size: var(--h1-font-size);
+  font-family: var(--heading-font);
+  margin-bottom: 14px;
+}
+
+.active {
+  border: 2px solid var(--first-color);
+  padding: 18px;
+}
+
+/*.active, .collapsible:hover {
+  background-color: #555;
+}*/
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
 
 /* code.html*/
 
@@ -624,6 +679,9 @@ input {
     width: 100%;
     margin-bottom: 5px;
     padding: 10px;
+  }
+  .bottomsection {
+    padding-bottom: 3.5rem;
   }
   /*h1 {
     font-size: 20pt;

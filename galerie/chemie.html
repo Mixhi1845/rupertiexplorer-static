@@ -42,7 +42,8 @@
 
         <!--=============== header mit dropdown menü ===============-->
         <header class="header" id="header">
-            <nav class="nav container">
+            <nav class="nav container">                
+
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -60,7 +61,7 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="/galerie.html" class="nav__link">
+                            <a href="/galerie.html" class="nav__link active-link">
                                 <i class="fa-solid fa-photo-video"></i>
                                 <span class="nav__name"><p>Galerie</p></span>
                             </a>
@@ -68,7 +69,15 @@
                     </ul>
                 </div>
 
-                <a href="/index.html"><img src ="/assets/weblogo.svg" alt="logo" class="nav__img svgcolor1"></a>
+                <a class="nav__logo" href="/index.html"><h1 class="nav__title">EDV-Räume</h1></a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <button onclick="copyText()">
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <span class="nav__name"><p>teilen</p></span>
+                        </button>
+                    </li>
+                </ul>   
                 <div class="dropdown">
                     <button class="dropbtn">Infos 
                       <i class="fa fa-caret-down"></i>
@@ -79,33 +88,58 @@
                         <a href="/dropdown/datenschutz.html">Datenschutz</a>
                         <a href="/dropdown/impressum.html">Impressum</a>
                     </div>
-                </div>
+                </div>   
             </nav>
         </header>
 
-        <!--=============== TEXT ===============-->
-        <section class="container firstsection bottomsection" id="home">
-            <div class="textdiv">
-                <h2>Handbuch</h2>
-                <br>
-                <h3><u>FAQ</u></h2>
-                <br>
-                <h3><u>Wie nutze ich die Codeeingabe-Funktion?</u></h3>
-                <p>Als erstes müssen Sie den Code der Attraktion herausfinden. Diesen können Sie entweder direkt vor Ort an einem kleinen Aushang finden oder Sie entnehmen den Code dem Flyer, der Ihnen vor Ort ausgehändigt wurde. Dieser Code ist ein kurzer Zahlencode, wie beispielsweise „8“.</p>
-                <br>
-                <p>Öffnen Sie als nächstes die Codeeingabe-Funktion des Ruperti Explorers. Diese finden Sie <a href="/code.html">hier</a>.</p>
-                <br>
-                <p>Geben Sie den Code in das Suchfeld ein.</p>
-                <br>
-                <p>Klicken Sie dann auf das Lupensymbol 🔎 um zum entsprechenden Eintrag zu gelangen.</p>
-                <br>
-                <p>Viel Spaß beim Entdecken!</p>
-
+        <section class="container firstsection">
+            <div style="position:relative; display:block; width: 100%">
+                <div data-service="youtube" data-id="N_l8GBMFp-0" data-autoscale></div>
             </div>
-        </section> 
+        </section>
 
+        <section class="container">
+            <div class="container_numbers space-around">
+                <div class="bignumbers borderradius">
+                    <h3>Informatik</h3>
+                    <br><p>Fach</p>
+                </div>
+                <div class="bignumbers borderradius">
+                    <h3>Pädagogische</h3>
+                    <br><p>Softwareumgebung</p>
+                </div>
+                <div class="bignumbers borderradius">
+                    <h3>2023</h3>
+                    <br><p>neu augestattet</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container bottomsection">
+            <div class="article">
+                <div class="textdiv">
+                    <h3><strong><u>Highlights:</u></strong></h3>
+                    <p>Der EDV2 Raum wurde vor kurzem mit neuer Technik ausgestattet.</p>
+                    <br>
+                    <h3><strong><u>Beschreibung:</u></strong></h3>
+                    <p>    
+                        -
+                    </p>
+                    <br>
+                    <h3><u>Ort in Bildern:</u></h3>
+                        <div id="gallery">
+                            <img loading="lazy" src="/images/fulls/daniel-j-schwarz-IBkFtczZ1u4-unsplash.webp">
+                            <img loading="lazy" src="/images/fulls/daniel-j-schwarz-meOCpxYZt_g-unsplash.webp">
+                            <img loading="lazy" src="/images/fulls/gelu-iancu-PTGQb_WPxNc-unsplash.webp">
+                            <img loading="lazy" src="/images/fulls/lorenzo-gerosa-HFRnyfmdoXc-unsplash.webp">
+                            <img loading="lazy" src="/images/fulls/daniel-j-schwarz-IBkFtczZ1u4-unsplash.webp">
+                       </div>
+                </div>
+            </div>
+        </section>
+        
         <!--=============== JavaScript + CDN scripts ===============-->
-        <script src="assets/js/main.js"></script>
+        <script src="/assets/js/main.js"></script>
 
         <script
             defer

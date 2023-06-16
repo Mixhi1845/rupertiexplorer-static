@@ -1,7 +1,10 @@
 const codeToPage = {
-  '1': '/galerie/mensa.html',
-  '2': '/galerie/edv.html',
-  '3': '/galerie/sportplatz.html'
+  'edv': '/galerie/edv.html',
+  'sportplatz': '/galerie/sportplatz.html',
+  'mensa': '/galerie/mensa.html',
+  'kleine Pausenhalle': '/galerie/-.html',
+  'große Pausenhalle': '/galerie/-.html',
+  'archiv': '/galerie/archiv.html'
 };
 
 const codeInput = document.getElementById('code-input');
@@ -24,7 +27,7 @@ function copyText() {
     ("https://rupertiexplorer.github.io/galerie/mensa.html");
 }
 
-  
+
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============
 const sections = document.querySelectorAll('section[id]')
 

@@ -21,7 +21,7 @@
         <meta name="apple-mobile-web-app-title" content="RuExplorer">
         <meta name="theme-color" content="#AA2D88">
         <meta name="msapplication-navbutton-color" content="#AA2D88">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
         <meta name="msapplication-starturl" content="/index.html">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
 
@@ -70,7 +70,6 @@
                 </div>
 
                 <a class="nav__logo" href="index.html"><h1 class="nav__title">Galerie</h1></a>
-                <i class="fa-solid fa-filter nav__logo"></i>
                 <div class="dropdown">
                     <button class="dropbtn">Infos 
                       <i class="fa fa-caret-down"></i>
@@ -86,62 +85,141 @@
         </header>
 
         <!--=============== Info Artikel ===============-->
-        <section class="container firstsection">
-            <a class="article_a" class="block" href="/galerie/mensa.html">
-                <div class="article">
-                    <div class="article-description">
-                        <h2>Mensa</h2>
-                        <p>Hier können sich Schülerinnen und Schüler jederzeit etwas zu Essen oder zu Trinken kaufen.</p>
+        <section class="container firstsection bottomsection">
+            
+            <button class="collapsible">Unterricht</button>
+            <div class="content">
+                <a class="article_a" class="block" href="/galerie/sportplatz.html">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Sportplatz</h2>
+                            <p>Hier findet vorallem im Sommer der Sportunterricht statt, man kann zudem bei gutem Wetter in der Freizeit Sport machen.</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="images/fulls/sportplatz.jpg" alt="Bild des Artikels 1">
+                        </div>
                     </div>
-                    <div class="article-image">
-                        <img class="article__pre" src="images/fulls/mensa.jpg" alt="Bild des Artikels 1">
+                </a>
+                <a class="article_a" class="block" href="#">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Sporthallen</h2>
+                            <p>--</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a class="article_a" class="block" href="/galerie/edv.html">
-                <div class="article">
-                    <div class="article-description">
-                        <h2>EDV-Räume</h2>
-                        <p>Hier finden der Natur & Technik- und Informatikunterricht statt.</p>
+                </a>
+                <a class="article_a" class="block" href="#">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Sprachenraum</h2>
+                            <p>--</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
                     </div>
-                    <div class="article-image">
-                        <img class="article__pre" src="#" alt="Bild des Artikels 2">
+                </a>
+                <a class="article_a" class="block" href="#">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Kunstsäle</h2>
+                            <p>--</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a class="article_a" class="block" href="/galerie/sportplatz.html">
-                <div class="article">
-                    <div class="article-description">
-                        <h2>Sportplatz</h2>
-                        <p>Hier findet vorallem im Sommer der Sportunterricht statt, man kann zudem bei gutem Wetter in der Freizeit Sport machen.</p>
+                </a>
+            </div>
+            
+            <button class="collapsible">Pausen</button>
+            <div class="content">
+                <a class="article_a" class="block" href="/galerie/mensa.html">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Mensa</h2>
+                            <p>Hier können sich Schülerinnen und Schüler jederzeit etwas zu Essen oder zu Trinken kaufen.</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="images/fulls/mensa.jpg" alt="Bild des Artikels">
+                        </div>
                     </div>
-                    <div class="article-image">
-                        <img class="article__pre" src="images/fulls/sportplatz.jpg" alt="Bild des Artikels 1">
+                </a>
+                <a class="article_a" class="block" href="#">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>große Pausenhalle</h2>
+                            <p>-</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a class="article_a" class="block" href="#">
-                <div class="article">
-                    <div class="article-description">
-                        <h2>große Pausenhalle</h2>
-                        <p>-</p>
+                </a>
+                <a class="article_a" class="block" href="#">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>kleine Pausenhalle</h2>
+                            <p>-</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
                     </div>
-                    <div class="article-image">
-                        <img class="article__pre" src="#" alt="Bild des Artikels 4">
+                </a>
+            </div>
+
+            <button class="collapsible">Naturwissenschaften</button>
+            <div class="content">
+                <a class="article_a" class="block" href="/galerie/informatik.html">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Informatik</h2>
+                            <p>Hier finden der Natur & Technik- und Informatikunterricht statt.</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a class="article_a" class="block" href="#">
-                <div class="article">
-                    <div class="article-description">
-                        <h2>kleine Pausenhalle</h2>
-                        <p>-</p>
+                </a>
+                <a class="article_a" class="block" href="/galerie/chemie.html">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Chemie</h2>
+                            <p>--</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
                     </div>
-                    <div class="article-image">
-                        <img class="article__pre" src="#" alt="Bild des Artikels 5">
+                </a>
+                <a class="article_a" class="block" href="/galerie/physik.html">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Physik</h2>
+                            <p>--</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+                <a class="article_a" class="block" href="/galerie/biologie.html">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Biologie</h2>
+                            <p>--</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
             <a class="article_a" class="block" href="/galerie/archiv.html">
                 <div class="article">
                     <div class="article-description">
@@ -172,5 +250,21 @@
         
         <script defer src="/assets/js/cookieconsent-init.js"></script>
 
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
     </body>
 </html>
