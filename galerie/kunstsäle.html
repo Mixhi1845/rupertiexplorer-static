@@ -47,21 +47,21 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="index.html" class="nav__link active-link">
+                            <a href="/index.html" class="nav__link">
                                 <i class="fa-solid fa-house"></i>
                                 <span class="nav__name"><p>Start</p></span>
                             </a>
                         </li>
                         
                         <li class="nav__item">
-                            <a href="code.html" class="nav__link">
+                            <a href="/code.html" class="nav__link">
                                 <i class="fa-solid fa-key"></i>
                                 <span class="nav__name"><p>Code</p></span>
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="galerie.html" class="nav__link">
+                            <a href="/galerie.html" class="nav__link active-link">
                                 <i class="fa-solid fa-photo-video"></i>
                                 <span class="nav__name"><p>Galerie</p></span>
                             </a>
@@ -69,7 +69,15 @@
                     </ul>
                 </div>
 
-                <a href="index.html"><img src ="assets/weblogo.svg" alt="logo" class="nav__img svgcolor1"></a>
+                <a class="nav__logo" href="/index.html"><h1 class="nav__title">Kunstsäle</h1></a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <button onclick="copyText()">
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <span class="nav__name"><p>teilen</p></span>
+                        </button>
+                    </li>
+                </ul>   
                 <div class="dropdown">
                     <button class="dropbtn">Infos 
                       <i class="fa fa-caret-down"></i>
@@ -80,63 +88,52 @@
                         <a href="/dropdown/datenschutz.html">Datenschutz</a>
                         <a href="/dropdown/impressum.html">Impressum</a>
                     </div>
-                </div> 
+                </div>   
             </nav>
         </header>
 
-        <!--=============== Heroselection ===============-->
-        <section class="container firstsection" id="Willkommen">
-            <h1 class="section__title"><strong>Willkommen,</strong></h1>
-            <h1 class="section__title">wollen Sie zur...</h1>
-                
-            <a href="https://www.ruperti-gymnasium.de/">
-                <div class="gradient borderradius">
-                    <h1>Homepage</h1>
+        <section class="container">
+            <div class="container_numbers space-around">
+                <div class="bignumbers borderradius">
+                    <h3>Kunst</h3>
+                    <br><p>Fach</p>
                 </div>
-            </a>
-            <a href="galerie.html">
-                <div class="gradient borderradius">
-                    <h1>Galerie</h1>
+                <div class="bignumbers borderradius">
+                    <h3>Arbeitsatmosphäre</h3>
+                    <br><p>Gruppen</p>
                 </div>
-            </a>
-            <a href="code.html">
-                <div class="gradient borderradius">
-                    <h1>Codeeingabe</h1>
+                <div class="bignumbers borderradius">
+                    <h3>Kreativität</h3>
+                    <br><p></p>
                 </div>
-            </a>
-            <a href="#">
-                <div class="gradient borderradius">
-                    <h1>Karte</h1>
-                </div>
-            </a>
-        </section>
-       
-        <!--=============== temporärer Infotext ===============
-        <section class="container section">
-            <div class="textdiv">
-                <h3><u>Info:</u></h3>
-                <p>Das Projekt befindet sich über die Pfingtferien in einer Entwicklungspause. Für weitere Infos kontaktieren sie uns bitte über Teams.</p>
             </div>
-        </section>-->
-        
-        <!--=============== Bild + Infotext ===============-->
-        <section class="container section bottomsection" id="Infos">
-            <h2 class="section__title2">Infos zu unserer Schule:</h2>
-            <div class="textbox">
-                <div class="textbox_img">
-                    <img class="borderradius" src="images/fulls/index.png" alt="Bild des Artikels 2">
-                </div>
+        </section>
+
+        <section class="container bottomsection">
+            <div class="article">
                 <div class="textdiv">
-                    <h3><strong>Ruperti Gymnasium Mühldorf am Inn</strong></h3>
-                    <p>Das Ruperti-Gymnasium ist ein Ort des freien Schaffens und des Strebens nach Wissen. Mit vielen Partnern und vielen Fördernden Veranstaltung steht die Zukunft ihres Schülers an erster Stelle. Wir fördern die Entfaltungsmöglichkeit ihres Kindes, damit es sich entwickeln kann und soziale und moralische Werte erlernt. Individuelle Förderung und moderne Bildung ist unser höchstes Gut.</p>
+                    <h3><strong><u>Highlights:</u></strong></h3>
+                    <p>Den Kunstlehrern stehen hier viele Materialien bereit.</p>
+                    <br>
+                    <h3><strong><u>Beschreibung:</u></strong></h3>
+                    <p>    
+                        Am Ruperti-Gymnasium finden sich im Untergeschoss des Erweiterungsbaus zwei Kunstsäle, in welchen der für alle Jahrgangsstufen Kunstunterricht stattfindet. Die Säle sind mit jeglichem nötigen Equipment ausgestattet, welches man im Unterricht benötigt, wie zum Beispiel Wassermalfarben, Papiere, Scheren, Cuttermesser und Stifte. Die Tische stehen hier als Gruppentische, sodass die Arbeitsatmosphäre sehr vorteilhaft für die Klassengemeinschaft ist. Außerdem ist auch zu erwähnen, dass es im Untergeschoss des Hauptbaus einen Werkraum gibt, in denen unter anderem getöpfert werden kann. 
+                    </p>
+                    <br>
+                    <h3><u>Ort in Bildern:</u></h3>
+                        <div id="gallery">
+                            <img loading="lazy" src="/images/fulls/daniel-j-schwarz-IBkFtczZ1u4-unsplash.webp">
+                            <img loading="lazy" src="/images/fulls/daniel-j-schwarz-meOCpxYZt_g-unsplash.webp">
+                            <img loading="lazy" src="/images/fulls/gelu-iancu-PTGQb_WPxNc-unsplash.webp">
+                            <img loading="lazy" src="/images/fulls/lorenzo-gerosa-HFRnyfmdoXc-unsplash.webp">
+                            <img loading="lazy" src="/images/fulls/daniel-j-schwarz-IBkFtczZ1u4-unsplash.webp">
+                       </div>
                 </div>
             </div>
         </section>
-
+        
         <!--=============== JavaScript + CDN scripts ===============-->
-        <script src="assets/js/main.js"></script>
-
-        <script src="/assets/js/app.js"></script>
+        <script src="/assets/js/main.js"></script>
 
         <script
             defer
