@@ -34,6 +34,25 @@ im.run({
         },
       },
     },
+
+    googlemaps : {
+      embedUrl: 'https://www.google.com/maps/embed?pb={data-id}',
+
+      iframe: {
+          allow : 'picture-in-picture; fullscreen;'
+      },
+
+      languages : {
+          en : {
+              notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer noopener" href="https://cloud.google.com/maps-platform/terms" target="_blank">terms and conditions</a> of Google Maps.',
+              loadAllBtn: "Don't ask again"
+          },
+          de : {
+              notice: 'Dieser Inhalt wird von einem Dritten gehostet. Durch die Anzeige der externen Inhalte akzeptieren Sie die <a rel="noreferrer noopener" href="https://cloud.google.com/maps-platform/terms" target="_blank">Allgemeine Geschäftsbedingungen</a> von Google Maps.',
+              loadAllBtn: "Akzeptieren und laden"
+          }
+      }
+  }
   },
 });
 
@@ -65,6 +84,11 @@ CookieConsent.run({
           onAccept: () => im.acceptService('youtube'),
           onReject: () => im.rejectService('youtube'),
         },
+        googlemaps: {
+          label: 'Google Maps Embed',
+          onAccept: () => im.acceptService('googlemaps'),
+          onReject: () => im.rejectService('googlemaps'),
+        }
       },
     },
 

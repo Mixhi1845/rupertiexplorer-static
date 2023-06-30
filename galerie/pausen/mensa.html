@@ -19,7 +19,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="application-name" content="RuExplorer">
         <meta name="apple-mobile-web-app-title" content="RuExplorer">
-        <meta name="theme-color" content="#AA2D88">
+        <meta name="theme-color" content="#ffffff">
         <meta name="msapplication-navbutton-color" content="#AA2D88">
         <meta name="apple-mobile-web-app-status-bar-style" content="default">
         <meta name="msapplication-starturl" content="/index.html">
@@ -64,6 +64,13 @@
                             <a href="/galerie.html" class="nav__link active-link">
                                 <i class="fa-solid fa-photo-video"></i>
                                 <span class="nav__name"><p>Galerie</p></span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/karte.html" class="nav__link">
+                                <i class="fa-solid fa-map"></i>
+                                <span class="nav__name"><p>Karte</p></span>
                             </a>
                         </li>
                     </ul>
@@ -134,6 +141,16 @@
         
         <!--=============== JavaScript + CDN scripts ===============-->
         <script src="/assets/js/main.js"></script>
+                
+        <script src="/assets/js/app.js"></script>
+
+        <script>
+            function copyText() {
+                /* Copy text into clipboard */
+                navigator.clipboard.writeText
+                ("https://rupertiexplorer.github.io/galerie/pausen/mensa.html");
+            }
+        </script>
 
         <script
             defer

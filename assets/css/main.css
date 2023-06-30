@@ -219,12 +219,16 @@ button {
   color: var(--text-color);
   text-align: left;
   line-height: 1em;
+  margin-bottom: 0.1em;
+  font-size: 2.5em;
 }
 
 .section__title2 {
   color: var(--text-color);
   text-align: left;
   line-height: 1em;
+  margin-bottom: 0.2em;
+  font-size: 1.5em;
 }
 
 /*=============== LAYOUT ===============*/
@@ -244,7 +248,6 @@ button {
   width: 100%;
   background-color: var(--body-color);
   z-index: var(--z-fixed);
-  transition: .4s;
   border-bottom: 2px solid var(--text-color);
 }
 
@@ -559,13 +562,13 @@ button {
   padding: 18px;
 }
 
-/*.active, .collapsible:hover {
-  background-color: #555;
-}*/
+.active, .collapsible:hover {
+  background-color: hsl(0, 0%, 22.5%);
+}
 
 .collapsible:after {
   content: '\002B';
-  color: white;
+  color: var(--text-color);
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -573,6 +576,7 @@ button {
 
 .active:after {
   content: "\2212";
+  color: var(--text-color);
 }
 
 .content {
@@ -632,6 +636,13 @@ input {
 }
 
 @media screen and (max-width: 767px) {
+  .header {
+    border-bottom: unset;
+  }
+  .nav__menu {
+    height: calc(var(--header-height) + 2rem); /* 5rem */
+    bottom: 0;
+  }
   .gradient {
     display: inline-block;
     aspect-ratio: 1/1;
@@ -641,8 +652,6 @@ input {
   .gradient h1 {
     line-height: unset;
   }
-
-
   .firstsection {
     padding-top: 4rem;
   }
@@ -677,18 +686,6 @@ input {
   .bottomsection {
     padding-bottom: 3.5rem;
   }
-  /*h1 {
-    font-size: 20pt;
-  }
-  h2 {
-    font-size: 18pt;
-  }
-  h3 {
-    font-size: 16pt;
-  }
-  p {
-    font-size: 14pt;
-  }*/
 }
 
 @media screen and (min-width: 767px) {

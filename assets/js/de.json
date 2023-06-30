@@ -41,6 +41,11 @@
                 "name": "im_youtube",
                 "description": "Damit weiß die Seite, dass der Benutzer den YouTube-Service akzeptiert hat.",
                 "Service": "Youtube Einbettung"
+              },
+              {
+                "name": "im_googlemaps",
+                "description": "Damit weiß die Seite, dass der Benutzer den Google Maps-Service akzeptiert hat.",
+                "Service": "Google Maps Einbettung"
               }
             ]
           }
