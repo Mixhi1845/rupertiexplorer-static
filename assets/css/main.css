@@ -73,6 +73,7 @@
   /*========== Colors ==========*/
   --first-color: hsl(316, 58%, 42%);
   --second-color: hsl(0, 0%, 90%);
+  --interactive-color: hsl(0, 0%, 85%);
   --title-color: hsl(316, 58%, 42%);
   --text-color: hsl(0, 0%, 0%);
   --body-color: hsl(0, 100%, 100%);
@@ -562,8 +563,8 @@ button {
   padding: 18px;
 }
 
-.active, .collapsible:hover {
-  background-color: hsl(0, 0%, 22.5%);
+.collapsible:hover {
+  background-color: var(--interactive-color);
 }
 
 .collapsible:after {
@@ -609,8 +610,8 @@ input {
 #search-button {
   width: 100%;
   padding: 5px 10px;
-  background-color: #444;
-  color: #fff;
+  background-color: var(--interactive-color);;
+  color: var(--text-color);
   border: none;
   cursor: pointer;
   border-bottom-left-radius: 10px;
@@ -644,13 +645,18 @@ input {
     bottom: 0;
   }
   .gradient {
-    display: inline-block;
-    aspect-ratio: 1/1;
-    width: 46%;
-    height: 46%;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .heroselect {
+    text-align: center;
+    vertical-align: middle;
   }
   .gradient h1 {
-    line-height: unset;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px; 
   }
   .firstsection {
     padding-top: 4rem;
@@ -684,7 +690,7 @@ input {
     padding: 10px;
   }
   .bottomsection {
-    padding-bottom: 3.5rem;
+    padding-bottom: 4.5rem;
   }
 }
 
@@ -741,6 +747,7 @@ input {
   :root {
     --first-color: hsl(316, 58%, 42%);
     --second-color: hsl(0, 0%, 20%);
+    --interactive-color: hsl(0, 0%, 22.5%);
     --title-color: hsl(316, 58%, 42%);
     --text-color: hsl(0, 100%, 100%);
     --body-color: hsl(0, 0%, 0%);
