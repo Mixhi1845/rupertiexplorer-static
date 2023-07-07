@@ -1,5 +1,6 @@
 {
     "name": "rupertiexplorer",
+    "display": "standalone",
     "description": "informative website for the Ruperti-Gymnasium Mühldorf am Inn",
     "short_name": "RuExplorer",
     "start_url": "/index.html",
@@ -7,5 +8,47 @@
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
     "orientation": "portrait-primary",
-    "display": "standalone"
-  }
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "display_override": ["window-controls-overlay"],
+    "icons": [
+      {
+        "src": "assets/icons/512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/icons/192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/icons/48x48.png",
+        "sizes": "48x48",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/icons/24x24.png",
+        "sizes": "24x24",
+        "type": "image/png"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Codeeingabe",
+        "short_name": "Code",
+        "description": "Öffne die Codeeingabe",
+        "url": "/code.html",
+        "icons": [{ "src": "assets/icons/192x192.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "Galerie",
+        "short_name": "Galerie",
+        "description": "Öffne die Galerie",
+        "url": "/galerie.html",
+        "icons": [{ "src": "assets/icons/192x192.png", "sizes": "192x192" }]
+      }
+    ]
+  
+  
+}
