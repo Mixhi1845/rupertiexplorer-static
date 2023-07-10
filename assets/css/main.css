@@ -423,6 +423,22 @@ button {
   height: 100px;
 }
 
+.article-description100 h2 {
+  margin-bottom: 5px;
+}
+
+.article-description100 p {
+  overflow:hidden;
+  line-height: 1.25rem;
+  max-height: 8rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+
 .article-image {
   width: 34%;
   height: 100px;
