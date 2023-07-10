@@ -520,11 +520,11 @@ button {
 
 #gallery {
   line-height:0;
-  -webkit-column-count:5; /* split it into 5 columns */
+  -webkit-column-count:3; /* split it into 5 columns */
   -webkit-column-gap:5px; /* give it a 5px gap between columns */
-  -moz-column-count:5;
+  -moz-column-count:3;
   -moz-column-gap:5px;
-  column-count:5;
+  column-count:3;
   column-gap:5px;
 }
 
@@ -535,13 +535,13 @@ button {
   border-radius: 10px;
 }
 
-@media (max-width: 1200px) {
+/*@media (max-width: 1200px) {
   #gallery {
    -moz-column-count:    4;
    -webkit-column-count: 4;
    column-count:         4;
   }
-}
+}*/
 
 @media (max-width: 1000px) {
   #gallery {
