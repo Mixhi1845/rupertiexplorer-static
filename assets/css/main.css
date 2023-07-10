@@ -415,8 +415,16 @@ button {
   -webkit-line-clamp: 2;
 }
 
+.article-description100 {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--second-color);
+  border-radius: 10px;
+  height: 100px;
+}
+
 .article-image {
-  width: 33%;
+  width: 34%;
   height: 100px;
 }
 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+        <!--=============== HEAD ===============-->
+		<title>Ruperti Explorer</title>
+        <meta charset="UTF-8" />
+        <script src="https://kit.fontawesome.com/dc1eb82b5e.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/assets/css/main.css"/>
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+
+        <!--=============== FAVICON ===============-->
+        <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" sizes="any">
+        <link rel="icon" href="/assets/icons/favico.ico" sizes="any">
+        <link rel="icon" type="image/png" href="/assets/icons/favicon.png" sizes="any"/>
+        <link rel="mask-icon" href="/assets/icons/mask-icon.svg" color="#000000">
+        <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
+        <!--=============== APP MANIFEST ===============-->
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="RuExplorer">
+        <meta name="apple-mobile-web-app-title" content="RuExplorer">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="msapplication-navbutton-color" content="#AA2D88">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="msapplication-starturl" content="/index.html">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!--=============== CDN links ===============-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.css"
+        />
+	</head>
+    
+    <body class="cookie_theme">
+
+        <!--=============== header mit dropdown menü ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">                
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/index.html" class="nav__link">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="nav__name"><p>Start</p></span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="/code.html" class="nav__link">
+                                <i class="fa-solid fa-key"></i>
+                                <span class="nav__name"><p>Code</p></span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/galerie.html" class="nav__link active-link">
+                                <i class="fa-solid fa-photo-video"></i>
+                                <span class="nav__name"><p>Galerie</p></span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/karte.html" class="nav__link">
+                                <i class="fa-solid fa-map"></i>
+                                <span class="nav__name"><p>Karte</p></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="nav__logo" href="/index.html"><h1 class="nav__title">Bibliothek</h1></a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <button onclick="copyText()">
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <span class="nav__name"><p>teilen</p></span>
+                        </button>
+                    </li>
+                </ul>   
+                <div class="dropdown">
+                    <button class="dropbtn">Infos 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/dropdown/handbuch.html">Handbuch</a>
+                        <a href="/dropdown/readme.html">README</a>
+                        <a href="/dropdown/datenschutz.html">Datenschutz</a>
+                        <a href="/dropdown/impressum.html">Impressum</a>
+                    </div>
+                </div>      
+            </nav>
+        </header>
+
+        <section class="container firstsection bottomsection">
+            <div class="article">
+                <div class="textdiv">
+                    <h3><strong><u>Beschreibung:</u></strong></h3>
+                    <p> Hier ist die erste Anlaufstelle bei jeglichen Anliegen. Das Sekretariat ist bei Fragen die erste Anlaufstelle für alle Schüler, Eltern und Lehrer. Bei jeglichen Anliegen wird einem hier von den Sekretärinnen freundlich geholfen oder Auskunft gegeben. Von hier aus werden entweder über das Elternportal oder einen Anruf alle Krankmeldungen verwaltet. Wenn man während des Schultages erkrankt, kann man sich dort melden, um sich von seinen Eltern abholen zu lassen. Außerdem kann man sich hier auch Equipment für die Tischtennisplatten und Tischkicker ausleihen.                        
+                    </p>
+                    <br>
+                    <h3><u>Ort in Bildern:</u></h3>
+                    <p>keine Bilder vorhanden</p>
+                </div>
+            </div>
+        </section>
+        
+        <!--=============== JavaScript + CDN scripts ===============-->
+        <script src="/assets/js/main.js"></script>
+                
+        <script src="/assets/js/app.js"></script>
+
+        <script>
+            function copyText() {
+                /* Copy text into clipboard */
+                navigator.clipboard.writeText
+                ("https://rupertiexplorer.github.io/galerie/orga/sekretariat.html");
+            }
+        </script>
+
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.umd.js"
+        ></script>
+        
+        <script defer src="/assets/js/cookieconsent-init.js"></script>
+
+    </body>
+</html>
